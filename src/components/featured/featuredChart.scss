@@ -1,0 +1,101 @@
+.featured {
+    box-shadow: -1px 9px 33px -1px rgba(168,168,168,0.79);
+    -webkit-box-shadow: -1px 9px 33px -1px rgba(168,168,168,0.79);
+    -moz-box-shadow: -1px 9px 33px -1px rgba(168,168,168,0.79);
+    padding: 10px;
+    height: 340px;
+    border-radius: 10px;
+    flex: 1;
+
+    .top {
+        color: gray;
+
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .description {
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+
+    .middle {
+        padding: 10px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .featuredChart {
+            width: 150px;
+            height: 150px;
+        }
+
+        .featuredInfo {
+            .amount {
+                font-size: 30px;
+            }
+    
+            .description {
+                font-weight: 300;
+                font-size: 12px;
+                color: gray;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .bottom {
+        .summary {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+
+            .item {
+                text-align: center;
+
+                .itemTitle {
+                    font-size: 14px;
+                    color: gray;
+                }
+
+                .resultAmount{
+                    font-size: 14px;
+                    margin-top: 10px;
+
+                    &.positive {
+                        color: green;
+                    }
+
+                    &.negative {
+                        color: red;
+                    }
+                }
+            }
+        }
+
+        .bottomLink {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+
+            .link {
+                font-size: 14px;
+                color: rgb(160, 160, 160);
+            }
+
+            .icon {
+                color: rgb(160, 160, 160);
+            }
+        }
+    }
+}
