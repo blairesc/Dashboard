@@ -1,38 +1,18 @@
 .widget {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    flex: 1;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: -1px 9px 33px -1px rgba(168,168,168,0.79);
     -webkit-box-shadow: -1px 9px 33px -1px rgba(168,168,168,0.79);
     -moz-box-shadow: -1px 9px 33px -1px rgba(168,168,168,0.79);
-    height: 100px;
-    width: 150px;
+    height: 150px;
 
-    .left, 
-    .right {
+    .top {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-
-        .title {
-            font-weight: bold;
-            font-size: 14px;
-            color: rgb(160, 160, 160);
-        }
-
-        .counter {
-            font-size: 24px;
-            font-weight: 300;
-        }
-
-        .link {
-            font-size: 12px;
-            border-bottom: 1px solid gray;
-            width: max-content;
-        }
 
         .percentage {
             display: flex;
@@ -55,5 +35,25 @@
             align-self: flex-end;
             cursor: pointer;
         }
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+
+        .counter {
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            color: rgb(160, 160, 160);
+            cursor: pointer;
+        }
+        
     }
 }

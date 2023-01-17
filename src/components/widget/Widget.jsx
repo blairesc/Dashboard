@@ -3,6 +3,7 @@ import PeopleIcon from "@mui/icons-material/People";
 import PaidIcon from '@mui/icons-material/Paid';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import EastIcon from '@mui/icons-material/East';
 
 const Widget = ({ type }) => {
   let data;
@@ -78,16 +79,17 @@ const Widget = ({ type }) => {
 
   return (
     <div className="widget">
-      <div className="left">
-        <span className="title">{ data.title }</span>
-        <span className="counter">{ data.isMoney && "$"} { amount }</span>
+      <div className="top">
+        { data.icon }
+        <p className="percentage positive">+{ percentage }%</p>
       </div>
       
-      <div className="right">
-        { data.icon }
-        <div className="percentage positive">
-          +{ percentage }%
-        </div>
+      <div className="bottom">
+        <span className="counter">{ data.isMoney && "$"} { amount }</span>
+        <span className="title">
+          { data.title }
+          <EastIcon fontSize="small" />
+        </span>
       </div>
     </div>
   )
