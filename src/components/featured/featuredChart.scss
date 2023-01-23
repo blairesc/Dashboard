@@ -3,7 +3,7 @@
     -webkit-box-shadow: -1px 9px 33px -1px rgba(168,168,168,0.79);
     -moz-box-shadow: -1px 9px 33px -1px rgba(168,168,168,0.79);
     padding: 10px;
-    height: 340px;
+    height: 300px;
     border-radius: 10px;
     flex: 1;
 
@@ -52,7 +52,7 @@
 
     .bottom {
         .summary {
-            margin-top: 20px;
+            
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -82,7 +82,7 @@
         }
 
         .bottomLink {
-            margin-top: 25px;
+            margin-top: 10px;
             display: flex;
             align-items: center;
             gap: 8px;

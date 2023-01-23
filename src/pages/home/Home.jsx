@@ -24,7 +24,7 @@ const Home = () => {
           <FeaturedChart />
         </div>
 
-        <div className="chart">
+        <div className="chartContainer">
           <Chart />
         </div>
       </div>
