@@ -1,5 +1,5 @@
 import "./featuredChart.scss";
-import { CircularProgressbar } from "react-circular-progressbar";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import EastIcon from '@mui/icons-material/East';
 
@@ -13,7 +13,16 @@ const FeaturedChart = () => {
 
       <div className="middle">
         <div className="featuredChart">
-          <CircularProgressbar value={70} text={"70%"} strokeWidth={5} />
+          <CircularProgressbar 
+            value={70} 
+            text={"70%"} 
+            strokeWidth={5}
+            styles={buildStyles({
+              strokeLinecap: "butt",
+              pathColor: "#67bcfa",
+              textColor: "#67bcfa"
+            })}  
+          />
         </div>
 
         <div className="featuredInfo">
