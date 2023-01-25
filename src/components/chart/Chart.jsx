@@ -34,10 +34,10 @@ const Chart = () => {
           </div>
         </div>
       </div>
-      <ResponsiveContainer width="100%" height={300} >
+      <ResponsiveContainer width="100%" height={200} >
         <BarChart
             width={500}
-            height={300}
+            height={200}
             data={data}
             margin={{
               top: 20,
@@ -46,9 +46,9 @@ const Chart = () => {
               bottom: 5,
             }}
           >
-            <CartesianGrid strokeDasharray="1 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
+            <CartesianGrid strokeDasharray="1 3" className="chartGrid" />
+            <XAxis dataKey="name" stroke="#A0A0A0" />
+            <YAxis stroke="#A0A0A0" />
             <Tooltip />
             <Bar dataKey="totalIncome" stackId="a" fill="#4081eb" barSize={30} />
             <Bar dataKey="totalOrders" stackId="a" fill="#face70" barSize={30} />

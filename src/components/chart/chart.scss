@@ -28,6 +28,7 @@
 
                 p {
                     color: gray;
+                    font: 12px;
                 }
 
                 .colorOption {
@@ -52,5 +53,9 @@
                 }
             }
         }
+    }
+
+    .chartGrid { 
+        stroke: gray;
     }
 }
